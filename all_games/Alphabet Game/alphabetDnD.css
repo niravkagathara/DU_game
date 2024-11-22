@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #7295d4;
+    overflow: hidden;
+}
+
+/*----Scoll-Bar*----*/
+
+body::-webkit-scrollbar{
+	width: 12px;
+
+}
+body::-webkit-scrollbar-track{
+	background: #181818;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: #01B8E0;
+	border-radius: 20px;
+	border: 3px solid #181818;
+}
+
+
+/*----Logo-header----*/
+
+.logo-header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 1px;
+	
+}
+.darshan-logo{
+    position: relative;
+    height: 100%;
+    width: 150px;
+	margin-left: 30px;
+}
+.aswdc-logo{
+    position: relative;
+    height: 100%;
+    width: 150px;
+	margin-right: 30px;
+}
+.darshan-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.aswdc-logo img{
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.emptybox
+{
+    height: 339px;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    border-radius: 8px;
+}
+#Back-btn{
+	
+    height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 87%;
+    left: 3%;
+
+}
+/* --------Main content---------- */
+h1
+{
+    margin-top: 5px;
+}
+
+.main
+{
+    height: 557px;
+    display: flex;
+    position: absolute;
+    top: 134px;
+}
+
+.first
+{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 105%;
+    justify-content: space-evenly;
+    padding-top: 96px;
+    border-radius: 8px;
+}
+
+.last
+{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 107%; */
+    justify-content: space-evenly;
+    padding-top: 96px;
+    border-radius: 8px;
+}
+
+.image
+{
+    height: 95px;
+    width: 95px;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
+
+.box 
+{
+    background-color: aliceblue;
+    height: 72px;
+    width: 72px;
+    margin-right: 11px;
+    border-radius: 20px;
+    border: 1px dotted blue;
+}
+
+.change
+{
+    border: 2px solid black;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height: 82px;
+    width: 82px;
+}
+
+/* ---------ribbon--------- */
+.ribbon
+{
+    height: 220px;
+    width: 90%;
+    position:absolute;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    transform: translateX(70px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 1000;
+    color: black;
+    flex-direction: column;
+}
+
+.ribbon img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.happyImage
+{
+    height: 500px;
+    width: 330px;
+    border-radius:20px;
+}
+.levels
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 35px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: 52px;
+    background:#427acc;
+    width: 200px;
+    height: auto;
+    color: #e8e4dd;
+    padding: 5px 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.levels img
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    transform: translateY(2px);
+}
+#hello
+{
+    margin-right: 20px;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Snake.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://tse1.mm.bing.net/th?id=OIP.4eWBWGWKODtLglSBXi_AAgHaHa&pid=Api&P=0a"
+    />
+    <title>Snake</title>
+  </head>
+  <body id="body">
+    <div class="title-bar">
+      <div class="darshan-logo">
+        <img src="../Skyline web/assests/Images/DU_Logo.png" />
+      </div>
+
+      <h1 id="score">0</h1>
+      <div class="aswdc-logo">
+        <img src="../Skyline web/assests/Images/ASWDC-logo.png" />
+      </div>
+    </div>
+
+    <div class="game-over displayNone" onClick="refresh()">
+      Click here to Play Again!
+    </div>
+    <div id="Back-btn">
+      <a href="../index.html"
+        ><img
+          style="height: 100%; width: 100%"
+          id="back-img"
+          src="../Skyline web/assests/Images/back btn.png"
+          alt=""
+      /></a>
+    </div>
+
+    <canvas id="board"></canvas>
+    <script src="./Snake.js" defer></script>
+  </body>
+</html>

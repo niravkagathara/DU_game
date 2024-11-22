@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Start Page</title>
+	<link rel="icon" type="image/x-icon" href="thief-head.png">
+
+	<style>
+
+		*{
+
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+
+			width: 100%;
+			height: 100vh;
+		}
+		
+		.start-container{
+
+			width: 100%;
+			height: 100vh;
+			/*background-color: #eccc68;*/
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+		}
+
+		.start-container img{
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+		}
+
+		.navbar-container{
+
+			width: 100%;
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			margin-top: 5px;
+		}
+
+		.darshan-container{
+
+			width: 200px;
+			height: 100%;
+			position: relative;
+			margin-left: 20px;
+			background-color: #ffffff38;
+		}
+
+		.darshan-container img{
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+		.aswdc-container{
+
+			width: 200px;
+			height: 100%;
+			position: relative;
+		}
+
+		.aswdc-container img{
+
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+
+		.strat-button{
+
+			width: 150px;
+			height: 45px;
+			background-color: rgba(100, 90, 255, 0.8);
+			border: 1px solid #ffffff;
+			border-radius: 10px;
+			color: #ffffff;
+			margin: 10px;
+			position: absolute;
+			cursor: pointer;
+			outline: none;
+			transition: all 0.2s linear;
+		}
+
+		.play{
+
+			margin-top: 150px;
+		}
+
+		.strat-button:hover{
+
+			transform: scale(1.1);
+			background-color: rgba(100, 90, 255, 0.9);
+
+		}
+
+		#Back-btn{
+
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			margin-left: 100px;
+			/* transform: translateY(-90px); */
+			position: absolute;
+			top: 80%;
+			left: 0px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="start-container">
+
+		<div class="navbar-container">
+
+			<div class="darshan-container">
+				
+				<img src="DU_Logo.svg">
+
+			</div>
+
+			<div class="aswdc-container">
+				
+				<img src="ASWDC.png">
+
+			</div>
+			
+		</div>
+
+		<img src="background.png">
+
+		<button class="strat-button" onclick="goToTraning()">Traning</button>
+		<button class="strat-button play" onclick="goToPlayGame()">Play</button>
+
+		<div id="Back-btn">
+			<a href="../index.html"><img style="height: 100%; width: 100%;" id="back-img" src="../Skyline web/assests/Images/back btn.png" alt="" /></a>
+		</div>
+		
+	</div>
+
+
+</body>
+
+<script>
+	
+	function goToTraning(){
+
+		window.location.href = "thiefShootGameTraning.html";
+	}
+
+	function goToPlayGame(){
+
+		window.location.href = "thiefShootGame.html";
+	}
+
+</script>
+
+
+</html>

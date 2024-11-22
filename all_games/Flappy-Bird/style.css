@@ -1,0 +1,294 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background Image */
+.background {
+    height: 100vh;
+    width: 100vw;
+    background: url('images/background-img.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Bird Sprite */
+.bird {
+    height: 70px;
+    width: 90px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+}
+
+/* Pipe Sprite */
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background: radial-gradient(lightgreen 50%, green);
+    border: 5px solid black;
+}
+
+/* Message Style */
+.message {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    text-align: center;
+}
+
+.messageStyle {
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+}
+
+/* Score Style */
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 5vh;
+    font-size: 5vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.score_val {
+    color: gold;
+    font-weight: bold;
+}
+
+/* High Score Style */
+.high_score {
+    position: fixed;
+    z-index: 10;
+    height: 5vh;
+    font-size: 5vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.high_score_val {
+    color: gold;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) { /* Mobile devices */
+    .message {
+        font-size: 2em;
+        top: 50%;
+    }
+    .score, .high_score {
+        font-size: 3vh;
+        margin: 5px;
+    }
+    .bird {
+        width: 60px;
+        height: 50px;
+    }
+    .pipe_sprite {
+        width: 12vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+    .message {
+        font-size: 3em;
+        top: 50%;
+    }
+    .score, .high_score {
+        font-size: 4vh;
+        margin: 8px;
+    }
+    .bird {
+        width: 80px;
+        height: 70px;
+    }
+    .pipe_sprite {
+        width: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) { /* Laptops */
+    .message {
+        font-size: 3.5em;
+        top: 50%;
+    }
+    .score, .high_score {
+        font-size: 4.5vh;
+        margin: 10px;
+    }
+    .bird {
+        width: 90px;
+        height: 70px;
+    }
+    .pipe_sprite {
+        width: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) { /* Desktops */
+    .message {
+        font-size: 4em;
+        top: 50%;
+    }
+    .score, .high_score {
+        font-size: 5vh;
+        margin: 10px;
+    }
+    .bird {
+        width: 100px;
+        height: 80px;
+    }
+    .pipe_sprite {
+        width: 7vw;
+    }
+}
+
+@media only screen and (min-width: 1921px) { /* TVs and large screens */
+    .message {
+        font-size: 5em;
+        top: 50%;
+    }
+    .score, .high_score {
+        font-size: 6vh;
+        margin: 12px;
+    }
+    .bird {
+        width: 120px;
+        height: 100px;
+    }
+    .pipe_sprite {
+        width: 6vw;
+    }
+}
+/* Mobile and Tablet Styles */
+@media only screen and (max-width: 768px) { /* Mobile devices */
+    /* Mobile-specific styles */
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+    /* Tablet-specific styles */
+}
+
+/* Laptop and PC Styles */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) { /* Laptops and PCs */
+    /* Laptop and PC-specific styles */
+}
+
+/* TV Styles */
+@media only screen and (min-width: 1441px) { /* TVs and large screens */
+    /* TV-specific styles */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:skyblue;
+    overflow: hidden;
+    
+}
+
+/*----Scoll-Bar*----*/
+
+body::-webkit-scrollbar{
+	width: 12px;
+
+}
+body::-webkit-scrollbar-track{
+	background: #181818;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: #01B8E0;
+	border-radius: 20px;
+	border: 3px solid #181818;
+}
+
+
+/*----Logo-header----*/
+
+.logo-header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 1px;
+    position: fixed;
+	
+}
+.darshan-logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    width: 150px;
+	margin-left: 30px;
+}
+.aswdc-logo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    width: 150px;
+	margin-right: 30px;
+}
+.darshan-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.aswdc-logo img{
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.emptybox
+{
+    height: 339px;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    border-radius: 8px;
+}
+#Back-btn{
+	
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 87%;
+    left: 3%;
+}

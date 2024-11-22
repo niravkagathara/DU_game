@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+.NoImg{
+	position: relative;
+	top: 40%;
+	width: 110px;
+
+	/* padding: 50px; */
+	/*background-color: black;*/
+	
+}
+.row-image{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	/* flex-wrap: wrap; */
+}
+
+.DiceImg{
+	width: 100px;
+	position: relative;
+	top: 60%;
+	margin-top: 20px;
+	cursor: pointer;
+	/*background-color: black;*/
+}
+.PopUpBox{
+	/*background-color: black;*/
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	 top: 10vh; 
+	left: 40%;
+	/* stop-opacity: initial; */
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	/* align-content: center; */
+	/* border: 2px solid red; */
+	visibility: hidden;
+}
+.MyBtn{
+	font-family: monospace;
+	font-size: 20px;
+	color: green;
+}
+
+.logo-header{
+	width: 100%;
+	height: 100px;
+	/* background-color: #292929; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.darshan-logo{
+	float: left;
+	position: sticky;
+	top: 0px;
+	left: 20px;
+	height: 100%;
+	width: 150px;
+}
+.aswdc-logo{
+	float: right;
+	top: 0px;
+	right: 20px;
+	position: sticky;
+	height: 100%;
+	width: 100px;
+
+}
+.darshan-logo img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.aswdc-logo img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	margin-top: 12px;
+}
+#Back-btn{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	transform: translate(25px,320px);
+}
